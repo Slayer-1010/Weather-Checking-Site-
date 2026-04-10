@@ -9,7 +9,7 @@ A beautiful, responsive weather app built with HTML, CSS, and JavaScript.   Get 
 - Responsive design for mobile & desktop
 
 ## Demo
-[Live Demo]: https://slayer-1010.github.io/Weather-Checking-Site-/
+[Live Demo] (https://slayer-1010.github.io/Weather-Checking-Site-/)
 
 ## Screenshot
 <img width="857" height="632" alt="image" src="https://github.com/user-attachments/assets/e3cf7487-2086-4c68-95dc-45b920c3b36b" />
