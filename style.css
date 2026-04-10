@@ -1,0 +1,156 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px; /* important for small screens */
+}
+
+/* CONTAINER */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+
+    width: 100%;
+    max-width: 400px; /* responsive width */
+}
+
+/* TITLE */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    font-weight: bold;
+}
+
+/* WEATHER */
+.weather-box img {
+    width: 80px;
+    margin: 10px 0;
+}
+
+.weather-box p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* HISTORY */
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    cursor: pointer;
+    padding: 6px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* -------------------- */
+/* 📱 MOBILE OPTIMIZATION */
+/* -------------------- */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        flex-direction: column; /* stack input + button */
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .weather-box img {
+        width: 60px;
+    }
+
+    .weather-box p {
+        font-size: 0.9rem;
+    }
+
+    .history h3 {
+        font-size: 0.9rem;
+    }
+
+    .history li {
+        font-size: 0.8rem;
+    }
+}
+
+/* -------------------- */
+/* 📱 TABLET */
+/* -------------------- */
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
